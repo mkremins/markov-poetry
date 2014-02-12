@@ -1,7 +1,15 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <script src="out/goog/base.js" type="text/javascript"></script>
-        <script src="markov_poetry.js" type="text/javascript"></script>
-        <script type="text/javascript">goog.require("markov_poetry.core");</script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>markov poetry</title>
+</head>
+<body>
+  <textarea id="input" cols="80" rows="30" placeholder="paste lots of text here"></textarea>
+  <br/>
+  <input id="word" type="text" placeholder="type a word from the above text here"></input>
+  <button id="button">phrase me bro</button>
+  <p id="output"></p>
+  <script src="js/markov.js"></script>
+</body>
 </html>

@@ -10,10 +10,9 @@
   :source-paths ["src"]
 
   :cljsbuild { 
-    :builds [{:id "markov-poetry"
-              :source-paths ["src"]
+    :builds [{:source-paths ["src"]
               :compiler {
-                :output-to "markov_poetry.js"
-                :output-dir "out"
-                :optimizations :none
-                :source-map true}}]})
+                :output-to "js/markov.js"
+                :output-dir "js/out"
+                :optimizations :whitespace
+                :source-map "js/markov.js.map"}}]})
