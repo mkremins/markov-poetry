@@ -1,6 +1,6 @@
-(defproject markov-poetry "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+(defproject markov-poetry "0.1.0"
+  :description "Word salad website"
+  :url "http://github.com/mkremins/markov-poetry"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2138"]]
