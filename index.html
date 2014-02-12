@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>markov poetry</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/lib/float.js"></script>
+</head>
+<body>
+  <h1>markov poetry</h1>
+  <div class="field-wrapper">
+    <label for="input" class="float-label">paste lots of text here</label>
+    <textarea id="input" cols="70" rows="20"></textarea>
+  </div>
+  <button id="button">click to poetry</button>
+  <p id="output"></p>
+  <script>
+  FloatLabel.enable(document.getElementById('input'));
+  </script>
+  <script src="js/markov.js"></script>
+</body>
+</html>
