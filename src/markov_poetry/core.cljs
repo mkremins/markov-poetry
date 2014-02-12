@@ -1,10 +1,10 @@
 (ns markov-poetry.core
   (:require [clojure.string :refer [split]]))
 
-(enable-console-print!)
-
 (defn tokenize [text]
-  (->> (split text #"[^\w'-]+") (map #(.toLowerCase %)) (into [])))
+  (->> (split text #"[^\w'-]+")
+    (map #(.toLowerCase %))
+    (vec)))
 
 (defn weighted-choice
   "Given a map `choices {outcome weight}`, returns a randomly chosen `outcome`
@@ -46,5 +46,4 @@
   (.addEventListener button "click"
                      (fn [_]
                        (let [nexts (nexts-map (tokenize (.-value input)))]
-                         (set! (.-innerHTML output)
-                               (markov-chain nexts))))))
+                         (set! (.-innerHTML output) (markov-chain nexts))))))
